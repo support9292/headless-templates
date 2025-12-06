@@ -10,6 +10,10 @@ jobs:
   lint-and-test:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      actions: read
+
     strategy:
       matrix:
         node-version: [22.x]
