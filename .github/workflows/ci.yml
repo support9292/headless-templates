@@ -36,6 +36,8 @@ jobs:
       - name: Run security audit
         run: yarn audit
         continue-on-error: true
+        # Note: Yarn Berry audit may have connectivity issues with npm registry
+        # Consider enabling Dependabot for automated security updates
 
       - name: Build application
         run: yarn build

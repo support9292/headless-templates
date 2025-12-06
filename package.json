@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "next lint --fix",
     "lint:css": "stylelint \"**/*.{css,scss}\" --fix",
-    "audit": "npm audit --audit-level=moderate",
+    "audit": "yarn npm audit --recursive",
     "analyze": "ANALYZE=true next build",
     "prepare": "husky"
   },

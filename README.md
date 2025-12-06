@@ -277,14 +277,28 @@ NEXT_PUBLIC_WIX_CLIENT_ID=your_client_id_here
 
 ### Security Audits
 
-Run security audits regularly:
+Run security audits to check for known vulnerabilities:
 
 ```bash
-# Check for known vulnerabilities
-yarn audit
+# For Yarn Berry (v3+), use:
+yarn npm audit --recursive
 
-# Update dependencies
+# Or check with npx if npm audit is needed:
+npx npm-audit-resolver
+```
+
+> **Note**: This project uses Yarn Berry (v3.3.0) which has different audit capabilities than Yarn Classic or npm. The audit functionality may require network access to the npm registry.
+
+For continuous security monitoring, enable Dependabot (see below).
+
+### Updating Dependencies
+
+```bash
+# Update dependencies interactively
 yarn upgrade-interactive
+
+# Check for outdated packages
+yarn upgrade-interactive --latest
 ```
 
 ### Dependabot
