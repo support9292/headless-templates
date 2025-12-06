@@ -1,4 +1,4 @@
-import './footer.css';
+import './footer.scss';
 import { Logo } from '@app/components/Logo/Logo';
 import testIds from '@app/utils/test-ids';
 

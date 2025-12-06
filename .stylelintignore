@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+.yarn/
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Test reports and artifacts
+playwright-report/
+test-results/
+coverage/
+
+# Misc
+*.min.css

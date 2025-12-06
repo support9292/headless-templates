@@ -1,5 +1,10 @@
 @tailwind components;
 
+// BEM Component: footer-form
+// Block: footer-form
+// Elements: field, label, input
+// Modifiers: none in this example, but could add --large, --compact, etc.
+
 @layer components {
   .footer-form-field {
     @apply my-1;
@@ -9,10 +14,10 @@
     @apply text-sm;
     @apply mb-3;
     @apply inline-block;
-  }
 
-  .footer-form-label[aria-required]::after {
-    content: ' *';
+    &[aria-required]::after {
+      content: ' *';
+    }
   }
 
   .footer-form-input {
